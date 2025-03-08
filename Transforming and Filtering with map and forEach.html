@@ -1,0 +1,21 @@
+<script>
+    function processProducts(){
+         let product = [
+               { name: "Laptop",
+                 price: 1000 
+                 
+               },
+               { name: "Mouse",
+               price: 20 
+                 
+               }
+               ]
+product.map(product => product.name);
+
+product.forEach(product =>{
+  let amount = product.price >= 50 ? "above" : "below"
+  console.log(`${product.name} is ${amount} $50`);
+})
+}
+processProducts()
+</script>
